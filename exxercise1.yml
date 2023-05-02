@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spc-nop
+spec:
+  containers:
+    - name: springpetclinic
+      image: spc:1.0
+      ports:
+        - containerPort: 8080
+          protocol: "TCP"
+    - name: nopcommerce
+      image: nop:2.0
+      ports:
+        - containerPort: 80

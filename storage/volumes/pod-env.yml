@@ -1,0 +1,8 @@
+Apiversion: v1
+kind: pod
+metadata:
+  name: pod-env
+spec: 
+  - containers:
+      name: pod-env
+      
