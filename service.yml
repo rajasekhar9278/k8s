@@ -1,0 +1,16 @@
+apiversion: v1
+kind: Service
+metadata:
+  annotations: 
+    imageregistry: "https://hub.docker.com/"
+  creationTimestamp:
+    effect: NoExecute
+    key: empty
+    operator: Equal
+    value: empty
+  labels:
+    app: nopcomerce
+  name: Service
+  namespace: Service      
+spec:
+  allocateLoadBalancerNodePorts: 

@@ -1,0 +1,22 @@
+apiversion: batch/v1
+kind: CronJob
+metadata:
+  name: alpine
+  namespace: cronjob
+spec:
+  concurrencyPolicy: "Allow"
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    metadata:
+      name: alpine
+      namespace: cronjob
+      labels: 
+        app: alpine
+      annotations: 
+        imageregistry: "https://hub.docker.com/"
+  containers: 
+    name: alpine
+    image: alpine:1.23
+    ports:
+    - conatainerport: 80
+            

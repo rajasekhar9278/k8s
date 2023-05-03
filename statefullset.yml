@@ -1,0 +1,30 @@
+apiversion: apps/v1
+kind: StatefulSet
+metadata:
+  name: nginx
+  namespace: statefullset
+  labels: 
+    app: nginx
+  annotations:
+    imageregistry: "https://hub.docker.com/"  
+spec:
+  minReadySeconds: 2
+  replicas: 2
+  selector:
+    matchExpressions:
+      key: nginx
+      operator: app
+      values: 
+        Exists
+    matchLabels: 
+      components: nginx
+  jobTemplate:
+    metadata:
+      annotations:
+        imageregistry:  "https://hub.docker.com/"
+      labels:
+        app: nginx
+        name: app
+        namespace: statefullset
+                    
+

@@ -1,0 +1,25 @@
+apiversion: apps/v1
+kind: deployment
+metadata: 
+  name: spc-nop
+  namespace: nop:2.0
+  labels: 
+    app: spc-nop
+  annotations: 
+    imageregistry: "https://hub.docker.com/"  
+spec:
+  minReadySeconds: 5
+  replicas: 3
+  selector:
+    labelselector:
+      matchExpressions: 
+        key: spc-nop
+        operator: Exists
+        values: 
+  template:
+    metadata:
+      annotations: 
+        imageregistry: "https://hub.docker.com/"
+      labels: 
+        app: spc-nop
+                

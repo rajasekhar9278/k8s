@@ -1,0 +1,6 @@
+---
+apiversion: apps/v1
+kind: DaemonSet
+metadata: 
+  
+spec:

@@ -1,0 +1,28 @@
+---
+apiversion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: res
+  namespace: pod-replicaset
+  labels: 
+    environment: production
+    app: nginx
+  annotations:
+    name: annotation
+    imageregistry: "https://hub.docker.com/" 
+
+spec: 
+  - minreadyseconds: 5
+    replicas: 3
+    selector: 
+      labelselector: 
+        matchExpressions: 
+          key: nginx
+          operator: Exists
+          values: 
+      matchExpressions: 
+        key: replicaset
+        operator: Exists
+        values: 
+
+  
