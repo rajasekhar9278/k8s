@@ -38,7 +38,7 @@ Auto scaling
 * desired state
 * Declarative vs imperative
 * pet vs cattle
-preview k8s.png
+![preview](k8s.png)
 
 
 * ### K8s cluster architecture
