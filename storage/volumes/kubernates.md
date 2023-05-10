@@ -38,6 +38,7 @@ Auto scaling
 * desired state
 * Declarative vs imperative
 * pet vs cattle
+* 
 ![preview](images/k8s.png)
 
 
