@@ -1,5 +1,5 @@
 ### Kubernates interview 
-* 1. what is k8s
+1. what is k8s
 * K8s is an open-source container orchestration tool or system that is used to automate tasks suck as the management, monitoring, scaling and deployment of containerized applications. It is used to manage several containers (since it can handle grouping of containers) which provides logical units that can be discovered and managed
 2. what are k8s
 k8s is another term of kubernates i.e in between K and S there are 8 words thats why it is mentioned as K8S
