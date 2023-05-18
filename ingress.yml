@@ -10,11 +10,6 @@ metadata:
     name: nginx
   namespace: dev  
 spec:
-  defaultBackend:
-    resource: 
-      apiGroup: v1
-      kind: TypedLocalObjectReference
-      name: gol
   service: 
     name: nginx
     port: 
