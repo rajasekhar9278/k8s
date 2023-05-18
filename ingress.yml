@@ -9,13 +9,6 @@ metadata:
     app: nginx
     name: nginx
   namespace: dev  
-spec:
-  service: 
-    name: nginx
-    port: 
-      name: nginx
-      number: 80
-  
   
                   
                 
