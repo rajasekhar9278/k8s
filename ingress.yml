@@ -22,16 +22,15 @@ spec:
       number: 80
   ingressClassName: nginx
   rules:
-    - host: 80
-      http: 
-        paths: 
-          - path: /testpath
-            pathType: prefix
-          - backend:       
-              service: 
-                name: nginx
-                port: 
-                  number: 80
+  - http: 
+      paths: 
+      - path: /testpath
+        pathType: prefix
+        backend:       
+          service: 
+          name: nginx
+          port: 
+            number: 80
                   
                 
   
