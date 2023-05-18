@@ -20,17 +20,8 @@ spec:
     port: 
       name: nginx
       number: 80
-  ingressClassName: nginx
-  rules:
-  - http: 
-      paths: 
-      - path: /testpath
-        pathType: prefix
-        backend:       
-          service: 
-          name: nginx
-          port: 
-            number: 80
+  
+  
                   
                 
   
