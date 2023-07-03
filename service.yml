@@ -13,4 +13,4 @@ metadata:
   name: Service
   namespace: Service      
 spec:
-  allocateLoadBalancerNodePorts: 
+  allocateLoadBalancerNodePorts: 80
