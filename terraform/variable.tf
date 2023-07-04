@@ -21,7 +21,7 @@ variable "key_name" {
 
 variable "s3bucket" {
   type    = string
-  default = "jenkins-bucket-31032023369432"
+  default = "jenkins-bucket-31032023369431"
 }
 
 variable "acl" {
