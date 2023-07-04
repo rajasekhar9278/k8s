@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "regions my resources will be deployed"
   type        = string
-  default     = "ap-northeast-1a"
+  default     = "ap-northeast-1"
 }
 
 variable "instance_type" {

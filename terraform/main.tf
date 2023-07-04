@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-    
+
 }
 
 
@@ -30,6 +30,7 @@ resource "aws_instance" "jenkins-instance" {
                 EOF
 
   user_data_replace_on_change = true
+  key_name                = var.key_name
   tags = {
     Name = "jenkins-EC2"
   }
