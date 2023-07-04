@@ -33,7 +33,7 @@ resource "aws_instance" "jenkins-instance" {
   key_name                = var.key_name
   count = var.instance_count
   tags = {
-    Name = "TF-RAJA-${local.current_time}"
+    Name = "TF-RAJA-${var.instance_name}-${local.current_time}"
   }
 }
 
