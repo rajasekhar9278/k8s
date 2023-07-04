@@ -77,7 +77,7 @@ resource "aws_security_group" "jenkins-sg" {
 #Create S3 bucket for your Jenkins Artifacts not open to the bucket
 resource "aws_s3_bucket" "jenkins-bucket" {
   bucket = var.s3bucket
-  acl    = var.acl
+#   acl    = var.acl
   tags = {
     description = "Private bucket to hold Jenkins artifacts"
     name        = "jenkins-bucket"
