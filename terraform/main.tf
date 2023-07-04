@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.6.2"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+}
+
 
 #Create EC2 instance in default VPC and bootstrap instance to start and install Jenkins
 resource "aws_instance" "jenkins-instance" {
