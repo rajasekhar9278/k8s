@@ -31,7 +31,7 @@ resource "aws_instance" "jenkins-instance" {
 
   user_data_replace_on_change = true
   key_name                = var.key_name
-  count = var.count
+  count = var.instance_count
   tags = {
     Name = "jenkins-EC2"
   }

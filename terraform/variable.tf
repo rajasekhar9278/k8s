@@ -34,7 +34,7 @@ variable "vpc_id" {
   default = "vpc-012c3159bd73728d4"
 }
 
-variable "count" {
+variable "instance_count" {
     type = string
     default = "3"
   
