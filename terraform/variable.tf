@@ -11,12 +11,12 @@ variable "instance_type" {
 
 variable "ami" {
   type    = string
-  default = "ami-04581fbf744a7d11f"
+  default = "ami-0d52744d6551d851e"
 }
 
 variable "key_name" {
   type    = string
-  default = "myec2key"
+  default = "gaming"
 }
 
 variable "s3bucket" {
@@ -31,5 +31,5 @@ variable "acl" {
 
 variable "vpc_id" {
   type    = string
-  default = "vpc-084f2b2f58db22b55"
+  default = "vpc-012c3159bd73728d4"
 }
