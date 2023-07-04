@@ -39,3 +39,9 @@ variable "instance_count" {
     default = "3"
   
 }
+
+variable "instance_name" {
+    type = string
+    default = "Date"
+  
+}
