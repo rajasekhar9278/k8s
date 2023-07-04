@@ -8,7 +8,9 @@ terraform {
 }
 
 provider "aws" {
-  features {}
+  features {
+    
+  }
 }
 
 
