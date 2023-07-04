@@ -1,7 +1,3 @@
-# Configure the AWS Provider
-provider "aws" {
-  region = var.aws_region
-}
 
 #Create EC2 instance in default VPC and bootstrap instance to start and install Jenkins
 resource "aws_instance" "jenkins-instance" {
@@ -10,12 +6,12 @@ resource "aws_instance" "jenkins-instance" {
   vpc_security_group_ids = [aws_security_group.jenkins-sg.id]
   user_data              = <<-EOF
                 #!/bin/bash
-                sudo yum update –y 
+                sudo apt update –y 
                 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo 
                 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
-                sudo yum upgrade
+                sudo apt upgrade
                 sudo amazon-linux-extras install java-openjdk11 -y 
-                sudo yum install jenkins -y
+                sudo apt install jenkins -y
                 sudo systemctl enable jenkins
                 sudo systemctl start jenkins
                 EOF
