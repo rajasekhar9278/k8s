@@ -41,7 +41,7 @@ variable "instance_count" {
 }
 
 variable "instance_name" {
-    type = string
-    default = "Date"
-  
+    current_time = timestamp()
+    
+
 }
